@@ -14,4 +14,5 @@ Resumo
 git init
 
 ## Referências 
-[Digital Innovation One ]
+[Remover branch ]
+$ git branch -d teste
