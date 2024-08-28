@@ -13,6 +13,11 @@ Introduzir ao versionamento de código com Git e GitHub.
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=30A3DC)](https://docs.github.com/)
 <br>
 
+<h1>
+
+    Atalhos
+</h1>
+
 
 ## Referências
 - [GIT. Documentation](https://git-scm.com/doc)
