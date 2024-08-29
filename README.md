@@ -16,7 +16,7 @@ Introduzir ao versionamento de código com Git e GitHub.
 <h1>
 O Git é um sistema de controle de versão distribuído que permite aos desenvolvedores gerenciar e acompanhar mudanças no código-fonte de um projeto
 </h1>
-
+<table>
 Configurando o Git
 git config: Configura as opções de configuração para o Git.
 git config --global user.name "Seu Nome": Define o nome do usuário para todos os repositórios.
@@ -93,7 +93,7 @@ Git Subtree
 git subtree: Gerencia submódulos como submódulos de subárvore.
 Git Subrepo
 git subrepo: Gerencia submódulos como submódulos de subrepositório.
-
+</table>
 ## Referências
 - [GIT. Documentation](https://git-scm.com/doc)
 - [GITHUB. Documentation](https://docs.github.com/)
