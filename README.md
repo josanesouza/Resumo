@@ -17,82 +17,89 @@ Introduzir ao versionamento de código com Git e GitHub.
 O Git é um sistema de controle de versão distribuído que permite aos desenvolvedores gerenciar e acompanhar mudanças no código-fonte de um projeto
 </h1>
 <table>
-Configurando o Git
-git config: Configura as opções de configuração para o Git.
-git config --global user.name "Seu Nome": Define o nome do usuário para todos os repositórios.
-git config --global user.email "seuemail@exemplo.com": Define o email do usuário para todos os repositórios.
-git config --list: Lista todas as configurações.
-Configurando o Repositório
-git init: Inicializa um novo repositório Git.
-git clone: Clona um repositório existente.
-git clone <url>: Clona o repositório da URL especificada.
+Configurando o Git <br>
+git config: Configura as opções de configuração para o Git.<br>
+git config --global user.name "Seu Nome": Define o nome do usuário para todos os repositórios.<br>
+git config --global user.email "seuemail@exemplo.com": Define o email do usuário para todos os repositórios.<br>
+git config --list: Lista todas as configurações.<br>
+Configurando o Repositório<br>
+git init: Inicializa um novo repositório Git.<br>
+git clone: Clona um repositório existente.<br>
+git clone <url>: Clona o repositório da URL especificada.<br>
 
-Verificando o Status
-git status: Mostra o status do repositório, incluindo quais arquivos foram modificados.
-Adicionando Arquivos
-git add: Adiciona arquivos ao índice.
-git add .: Adiciona todos os arquivos modificados.
-git add <arquivo>: Adiciona um arquivo específico.
-Removendo Arquivos
-git rm: Remove arquivos do índice e do diretório de trabalho.
+Verificando o Status<br>
+git status: Mostra o status do repositório, incluindo quais arquivos foram modificados.<br>
+Adicionando Arquivos<br>
+git add: Adiciona arquivos ao índice.<br>
+git add .: Adiciona todos os arquivos modificados.<br>
+git add <arquivo>: Adiciona um arquivo específico.<br>
+Removendo Arquivos<br>
+git rm: Remove arquivos do índice e do diretório de trabalho.<br>
 git rm --cached <arquivo>: Remove o arquivo do índice, mas mantém o arquivo no diretório de trabalho.
-Commitando Mudanças
-git commit: Grava as mudanças no repositório.
-git commit -m "Mensagem do commit": Commita as mudanças com uma mensagem.
-Visualizando o Histórico
-git log: Mostra o histórico de commits.
-git log --oneline: Mostra o histórico de commits em uma linha.
-Desfazendo Mudanças
-git reset: Redefine o índice e o diretório de trabalho para o estado de um commit específico.
-git reset --hard <commit>: Redefine o índice e o diretório de trabalho para o estado do commit especificado.
-Branches e Tags
-git branch: Lista, cria ou exclui branches.
-git branch <nome>: Cria uma nova branch.
-git branch -d <nome>: Exclui a branch especificada.
-git checkout: Muda para a branch especificada.
-git checkout -b <nome>: Cria uma nova branch e muda para ela.
-git tag: Cria, lista, exclui ou verifica tags.
-git tag <nome>: Cria uma tag para o commit atual.
+Commitando Mudanças<br>
+git commit: Grava as mudanças no repositório.<br>
+git commit -m "Mensagem do commit": Commita as mudanças com uma mensagem.<br>
+Visualizando o Histórico<br>
+git log: Mostra o histórico de commits.<br>
+git log --oneline: Mostra o histórico de commits em uma linha.<br>
+Desfazendo Mudanças<br>
+git reset: Redefine o índice e o diretório de trabalho para o estado de um commit específico.<br>
+git reset --hard <commit>: Redefine o índice e o diretório de trabalho para o estado do commit especificado.<br>
+Branches e Tags<br>
+git branch: Lista, cria ou exclui branches.<br>
+git branch <nome>: Cria uma nova branch.<br>
+git branch -d <nome>: Exclui a branch especificada.<br>
+git checkout: Muda para a branch especificada.<br>
+git checkout -b <nome>: Cria uma nova branch e muda para ela.<br>
+git tag: Cria, lista, exclui ou verifica tags.<br>
+git tag <nome>: Cria uma tag para o commit atual.<br>
 
 
-Adicionando Remotos
-git remote: Gerencia os remotos conectados ao repositório.
-git remote add <nome> <url>: Adiciona um novo remote.
-Fetching e Pulling
-git fetch: Busca as mudanças do remote, mas não as mescla.
-git pull: Busca as mudanças do remote e as mescla.
-Pushing
-git push: Envia as mudanças para o remote.
-git push <nome> <branch>: Envia as mudanças para o branch especificado no remote.
-Rebasing
-git rebase: Reaplica commits em cima de outro branch.
+Adicionando Remotos<br>
+git remote: Gerencia os remotos conectados ao repositório.<br>
+git remote add <nome> <url>: Adiciona um novo remote.<br>
+Fetching e Pulling<br>
+git fetch: Busca as mudanças do remote, mas não as mescla.<br>
+git pull: Busca as mudanças do remote e as mescla.<br>
+
+Pushing<br>
+git push: Envia as mudanças para o remote.<br>
+git push <nome> <branch>: Envia as mudanças para o branch especificado no remote.<br>
+
+Rebasing<br>
+git rebase: Reaplica commits em cima de outro branch.<br>
 git rebase <branch>: Reaplica os commits do branch atual em cima do branch especificado.
-Merging
-git merge: Combina as mudanças de outro branch.
-git merge <branch>: Combina as mudanças do branch especificado.
-Stashing
-git stash: Salva temporariamente as mudanças não commitadas.
-git stash pop: Aplica as mudanças salvas e remove-as do stash.
-Submodules
-git submodule: Gerencia submódulos.
-git submodule add <url> <caminho>: Adiciona um submódulo.
-git submodule update: Atualiza os submódulos.
 
-Git Hooks
-git hooks: Scripts executados automaticamente antes ou depois de eventos específicos do Git.
-Git LFS
-git lfs: Gerencia arquivos grandes.
-git lfs install: Instala o Git LFS.
-git lfs track: Adiciona arquivos para serem rastreados pelo Git LFS.
-Git Bisect
-git bisect: Encontra o commit que introduziu um bug.
-git bisect start: Inicia a busca pelo commit problemático.
-git bisect bad: Marca o commit atual como ruim.
-git bisect good <commit>: Marca o commit especificado como bom.
-Git Subtree
-git subtree: Gerencia submódulos como submódulos de subárvore.
-Git Subrepo
-git subrepo: Gerencia submódulos como submódulos de subrepositório.
+Merging<br>
+git merge: Combina as mudanças de outro branch.<br>
+git merge <branch>: Combina as mudanças do branch especificado.<br>
+
+Stashing<br>
+git stash: Salva temporariamente as mudanças não commitadas.<br>
+git stash pop: Aplica as mudanças salvas e remove-as do stash.<br>
+
+Submodules<br>
+git submodule: Gerencia submódulos.<br>
+git submodule add <url> <caminho>: Adiciona um submódulo.<br>
+git submodule update: Atualiza os submódulos.<br>
+
+Git Hooks<br>
+git hooks: Scripts executados automaticamente antes ou depois de eventos específicos do Git.<br>
+Git LFS<br>
+git lfs: Gerencia arquivos grandes.<br>
+git lfs install: Instala o Git LFS.<br>
+git lfs track: Adiciona arquivos para serem rastreados pelo Git LFS.<br>
+
+Git Bisect<br>
+git bisect: Encontra o commit que introduziu um bug.<br>
+git bisect start: Inicia a busca pelo commit problemático.<br>
+git bisect bad: Marca o commit atual como ruim.<br>
+git bisect good <commit>: Marca o commit especificado como bom.<br>
+
+Git Subtree<br>
+git subtree: Gerencia submódulos como submódulos de subárvore.<br>
+Git Subrepo<br>
+git subrepo: Gerencia submódulos como submódulos de subrepositório.<br>
 </table>
 ## Referências
 - [GIT. Documentation](https://git-scm.com/doc)
