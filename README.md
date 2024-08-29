@@ -14,8 +14,84 @@ Introduzir ao versionamento de código com Git e GitHub.
 <br>
 
 <h1>
+O Git é um sistema de controle de versão distribuído que permite aos desenvolvedores gerenciar e acompanhar mudanças no código-fonte de um projeto
+    
+Configurando o Git
+git config: Configura as opções de configuração para o Git.
+git config --global user.name "Seu Nome": Define o nome do usuário para todos os repositórios.
+git config --global user.email "seuemail@exemplo.com": Define o email do usuário para todos os repositórios.
+git config --list: Lista todas as configurações.
+Configurando o Repositório
+git init: Inicializa um novo repositório Git.
+git clone: Clona um repositório existente.
+git clone <url>: Clona o repositório da URL especificada.
 
-    Atalhos
+Verificando o Status
+git status: Mostra o status do repositório, incluindo quais arquivos foram modificados.
+Adicionando Arquivos
+git add: Adiciona arquivos ao índice.
+git add .: Adiciona todos os arquivos modificados.
+git add <arquivo>: Adiciona um arquivo específico.
+Removendo Arquivos
+git rm: Remove arquivos do índice e do diretório de trabalho.
+git rm --cached <arquivo>: Remove o arquivo do índice, mas mantém o arquivo no diretório de trabalho.
+Commitando Mudanças
+git commit: Grava as mudanças no repositório.
+git commit -m "Mensagem do commit": Commita as mudanças com uma mensagem.
+Visualizando o Histórico
+git log: Mostra o histórico de commits.
+git log --oneline: Mostra o histórico de commits em uma linha.
+Desfazendo Mudanças
+git reset: Redefine o índice e o diretório de trabalho para o estado de um commit específico.
+git reset --hard <commit>: Redefine o índice e o diretório de trabalho para o estado do commit especificado.
+Branches e Tags
+git branch: Lista, cria ou exclui branches.
+git branch <nome>: Cria uma nova branch.
+git branch -d <nome>: Exclui a branch especificada.
+git checkout: Muda para a branch especificada.
+git checkout -b <nome>: Cria uma nova branch e muda para ela.
+git tag: Cria, lista, exclui ou verifica tags.
+git tag <nome>: Cria uma tag para o commit atual.
+
+
+Adicionando Remotos
+git remote: Gerencia os remotos conectados ao repositório.
+git remote add <nome> <url>: Adiciona um novo remote.
+Fetching e Pulling
+git fetch: Busca as mudanças do remote, mas não as mescla.
+git pull: Busca as mudanças do remote e as mescla.
+Pushing
+git push: Envia as mudanças para o remote.
+git push <nome> <branch>: Envia as mudanças para o branch especificado no remote.
+Rebasing
+git rebase: Reaplica commits em cima de outro branch.
+git rebase <branch>: Reaplica os commits do branch atual em cima do branch especificado.
+Merging
+git merge: Combina as mudanças de outro branch.
+git merge <branch>: Combina as mudanças do branch especificado.
+Stashing
+git stash: Salva temporariamente as mudanças não commitadas.
+git stash pop: Aplica as mudanças salvas e remove-as do stash.
+Submodules
+git submodule: Gerencia submódulos.
+git submodule add <url> <caminho>: Adiciona um submódulo.
+git submodule update: Atualiza os submódulos.
+
+Git Hooks
+git hooks: Scripts executados automaticamente antes ou depois de eventos específicos do Git.
+Git LFS
+git lfs: Gerencia arquivos grandes.
+git lfs install: Instala o Git LFS.
+git lfs track: Adiciona arquivos para serem rastreados pelo Git LFS.
+Git Bisect
+git bisect: Encontra o commit que introduziu um bug.
+git bisect start: Inicia a busca pelo commit problemático.
+git bisect bad: Marca o commit atual como ruim.
+git bisect good <commit>: Marca o commit especificado como bom.
+Git Subtree
+git subtree: Gerencia submódulos como submódulos de subárvore.
+Git Subrepo
+git subrepo: Gerencia submódulos como submódulos de subrepositório.
 </h1>
 
 
